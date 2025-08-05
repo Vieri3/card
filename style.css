@@ -1,0 +1,129 @@
+.wrap {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: grid;
+    gap: 5px;
+}
+
+.card {
+    width: 50px;
+    height: 50px;
+    position: relative;
+    perspective: 1000px;
+    border: 1px dashed black;
+}
+
+.card-no-click {
+    width: 50px;
+    height: 50px;
+    position: relative;
+    perspective: 1000px;
+    pointer-events: none;
+}
+
+.display-no-click{
+    pointer-events: none;
+}
+
+.front,
+.back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: 1s;
+    backface-visibility: hidden;
+}
+
+.front {
+    background: green;
+}
+
+.back {
+    transform: rotateY(180deg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.front-click {
+    transform: rotateY(180deg);
+}
+
+.back-click {
+    transform: rotateY(360deg);
+}
+
+.btns,
+.steps,
+.stars{
+    margin: auto;
+    width: 250px;
+    text-align: center 
+}
+
+.star-active{
+    color: gold;
+}
+
+.star{
+    color:gray;
+}
+
+/* картинки - карточки */
+
+.pic-1{
+    background-image: url('./img/1.png');
+}
+.pic-2{
+    background-image: url('./img/2.png');
+}
+.pic-3{
+    background-image: url('./img/3.png');
+}
+.pic-4{
+    background-image: url('./img/4.png');
+}
+.pic-5{
+    background-image: url('./img/5.png');
+}
+.pic-6{
+    background-image: url('./img/6.png');
+}
+.pic-7{
+    background-image: url('./img/7.png');
+}
+.pic-8{
+    background-image: url('./img/8.png');
+}
+.pic-9{
+    background-image: url('./img/9.png');
+}
+.pic-10{
+    background-image: url('./img/10.png');
+}
+.pic-11{
+    background-image: url('./img/11.png');
+}
+.pic-12{
+    background-image: url('./img/12.png');
+}
+.pic-13{
+    background-image: url('./img/13.png');
+}
+.pic-14{
+    background-image: url('./img/14.png');
+}
+.pic-15{
+    background-image: url('./img/15.png');
+}
+.pic-16{
+    background-image: url('./img/16.png');
+}
+.pic-17{
+    background-image: url('./img/17.png');
+}
+.pic-18{
+    background-image: url('./img/18.png');
+}
+
