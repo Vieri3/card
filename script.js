@@ -29,14 +29,16 @@ $(document).ready(function () { //start jQuery
         let getStars_3 = CELLS/2 + 2; 
         let getStars_2 = CELLS/2 + 5;
         let getStars_1 = CELLS/2 + 10;
+        const activeStar = '<span class="star-active">&#9733;</span>';
+        const star = '<span class="star">&#9734;</span>';
         if (COUNT <= getStars_3){
-            $('.stars').html('<span class="star-active">&#9733;</span> <span class="star-active">&#9733;</span> <span class="star-active">&#9733;</span>');
+            $('.stars').html(activeStar + activeStar + activeStar);
         }else if (COUNT <= getStars_2){
-            $('.stars').html('<span class="star-active">&#9733;</span> <span class="star-active">&#9733</span> <span class="star">&#9734;</span>');
+            $('.stars').html(activeStar + activeStar + star);
         }else if(COUNT <= getStars_1){
-            $('.stars').html('<span class="star-active">&#9733;</span> <span class="star">&#9734;</span> <span class="star">&#9734;</span>');
+            $('.stars').html(activeStar + star + star);
         }else{
-            $('.stars').html('<span class="star">&#9734;</span> <span class="star">&#9734;</span> <span class="star">&#9734;</span>');
+            $('.stars').html(star + star + star);
         }
     }
 
